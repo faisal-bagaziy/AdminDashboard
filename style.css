@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 :root{
     --main-black-color: #33332D;
+    --main-white-color: #e1e1e1;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 body, html{
@@ -103,10 +104,25 @@ button:hover{
 
 .sideBar{
     background-color:var(--main-black-color);
+    color: var(--main-white-color);
     grid-column: 1;
     grid-row:  1 / span 3;
+    display: grid;
+    grid-template-rows: 0.6fr 1fr 1fr;
 }
 
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoImg{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
 
 
 
