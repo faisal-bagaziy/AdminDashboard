@@ -124,5 +124,16 @@ button:hover{
     font-size: 32px;
 }
 
-
+.frequentMenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.frequentMenu ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+.frequentMenu ul li:hover {
+    background-color: #4E4E45;
+}
 
