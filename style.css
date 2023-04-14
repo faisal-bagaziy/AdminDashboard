@@ -10,7 +10,6 @@ margin: 0;
 
 .grid-container{
     height: 100vh;
-    padding: 16px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 300px 1fr;
@@ -23,10 +22,9 @@ img{
 
 .header{
     grid-column: 2 / 3;
-    grid-row: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr;
 }
 
 .searchAndSummry{
@@ -36,6 +34,7 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     align-items: start;
+    padding-top: 20px;
 }
 
 .searchBar{
@@ -56,20 +55,58 @@ img{
     border-radius: 15px;
 }
 
-.summry ul{
+.summry ul , .features ul{
     margin: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 15px;
+    gap: 50px;
     padding-top: 10px;
 }
+.summry ul {
 
-.summry ul li {
+    padding-right: 20px;
+}
+ ul li {
     font-size: 16px;
     text-transform: uppercase;
     list-style-type: none;
     font-weight: bold;
   }
+
+.userInfoAndFeatures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+  }
+.icon{
+    padding-right: 10px;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+  }
+
+button{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border: solid  var(--main-black-color) 2px;
+    box-shadow: -3px 5px  var(--main-black-color);
+}
+
+button:hover{
+    color: white;
+    background-color: var(--main-black-color);
+}
+
+.sideBar{
+    background-color:var(--main-black-color);
+    grid-column: 1;
+    grid-row:  1 / span 3;
+}
+
+
 
 
